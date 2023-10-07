@@ -1,0 +1,27 @@
+{
+  "name": "ts-prisma-apollo-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn src/index.ts",
+    "test": "tsnd --respawn src/test.ts",
+    "mig": "npx prisma migrate dev --name init&&npx prisma generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^5.4.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.9.4",
+    "@prisma/client": "5.4.1",
+    "graphql": "15.3.0",
+    "graphql-scalars": "^1.22.2",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  }
+}
